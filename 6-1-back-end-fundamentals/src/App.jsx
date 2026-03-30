@@ -371,6 +371,14 @@ export default function App() {
   //     setStudent(data);
   //   });
 
+  useEffect(() => {
+  fetch('http://localhost:3000/student')
+    .then((res) => res.json())
+    .then((data) => {
+      setStudent(data);
+    });
+}, []);
+
   return (
     <main className="app-shell">
       <section className="hero-box">
