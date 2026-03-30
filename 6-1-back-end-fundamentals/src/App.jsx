@@ -352,8 +352,6 @@ END OF LAB INSTRUCTIONS
 ===================================================================
 */
 
-import express from 'express'; //TODO1
-const app = express(); //TODO2
 
 import { useEffect, useState } from 'react';
 import './index.css';
